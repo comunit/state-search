@@ -3,7 +3,7 @@ const matchList = document.getElementById("match-list");
 
 // search states.json and filter it
 const searchStates = async searchText => {
-  const res = await fetch("../data/states.json");
+  const res = await fetch("./data/states.json");
   const states = await res.json();
   matchList.innerHTML = "";
   // get matches to current text input
